@@ -1,0 +1,117 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid black;
+    margin: 20px 0px;
+    padding: 10px 30px;
+   
+}
+
+header nav ul li{
+    list-style: none;
+    
+}
+
+header nav .rightstuff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav .rightstuff .assistance{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    
+}
+header nav .rightstuff .whatsapp img{
+    width: 30px;
+}
+main{
+    width: 80%;
+    height: 91vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+main .container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+main .container .left{
+    width: 50%;
+}
+main .container .left h1{
+    width: 450px;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+main .container .left .button{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: orangered;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    
+}
+
+main .container .left .bottomleft{
+    margin-left: 50px;
+}
+.container .left .bottomleft p{
+    font-weight: bold;
+}
+main .container .left .bottomleft .open{
+    font-weight: 1;
+    margin-bottom: 10px;
+}
+
+main .container .right {
+    width: 50%;
+    background-image: url('../image/Image.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+main .container .right .service{
+    position: absolute;
+    top: 20px;
+    left: -125px;
+}
+main .container .right .rating{
+    position: absolute;
+    bottom: 0px;
+    right: -100px;
+}
