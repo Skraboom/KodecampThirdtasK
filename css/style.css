@@ -48,28 +48,28 @@ header nav .rightstuff .assistance{
 header nav .rightstuff .whatsapp img{
     width: 30px;
 }
-section.hero{
+.hero{
     width: 80%;
     height: 91vh;
     margin: auto;
     display: flex;
     align-items: center;
 }
-section.hero .container{
+.hero .container{
     height: 80%;
     width: 100%;
     display: flex;
 }
-section.hero .container .left{
+.hero .container .left{
     width: 50%;
 }
-section.hero .container .left h1{
+.hero .container .left h1{
     width: 450px;
     font-size: 50px;
     margin-top: 80px;
 }
 
-section.hero .container .left .button{
+.hero .container .left .button{
     color: white;
     display: flex;
     justify-content: center;
@@ -85,18 +85,18 @@ section.hero .container .left .button{
     
 }
 
-section.hero .container .left .bottomleft{
+.hero .container .left .bottomleft{
     margin-left: 50px;
 }
 .container .left .bottomleft p{
     font-weight: bold;
 }
-section.hero .container .left .bottomleft .open{
+.hero .container .left .bottomleft .open{
     font-weight: 1;
     margin-bottom: 10px;
 }
 
-section.hero .container .right {
+.hero .container .right {
     width: 50%;
     background-image: url('../image/Image.png') ;
     background-position: center;
@@ -105,12 +105,12 @@ section.hero .container .right {
     position: relative;
     
 }
-section.hero .container .right .service{
+.hero .container .right .service{
     position: absolute;
     top: 20px;
     left: -125px;
 }
-section.hero .container .right .rating{
+.hero .container .right .rating{
     position: absolute;
     bottom: 0px;
     right: -100px;
@@ -402,9 +402,15 @@ section.hero .container .right .rating{
     margin: auto;
     background-color: #F2F2F2;
     display: flex;
+    gap: 250px;
+    
+}
+.five .downone, .five .downtwo{
+    width: 50%;
+    display: flex;
     justify-content: space-between;
 }
-.five .down .one h1{
+.five .down .ones h1{
     font-size: 50px;
     color:#661CE7;
     
@@ -412,4 +418,227 @@ section.hero .container .right .rating{
 .test i, .testss i{
     font-size: 40px;
 }
- 
+
+
+
+@media screen and (max-width:426px){
+    
+    header, header nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+    }
+    .hero, .one, .two, .three, .four, .five{
+        width: 95vw;
+        height: 150vh;
+        margin: auto;
+
+    }
+    .container, .containertwo, .containerthree, .containerfour{
+        width: 100%;
+        height:100% ;
+        flex-direction: column;
+    }
+    .left, .right, .lefttwo, .righttwo, .leftthree, .rightthree{
+        width: 100%;
+        height: 50%;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .hero .container .right{
+        width: 100%;
+    }
+    .four .containerfour .top{
+        
+        width: 100%;
+    }
+    .four .containerfour .middle, .four .containerfour .bottom{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        
+        
+    }
+    .four{
+        height: 250vh;
+    }
+    .bottomlearn{
+        justify-content: center;
+    }
+    .five .topmost{
+        flex-direction: column;
+    }
+    .five .topmost .topguy{
+        width: 100%;
+        height: 80%;
+    }
+    .five .down{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .five .downone, .five .downtwo{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .five .button{
+        margin-left: 120px;
+    }
+    .hero .container .left .button{
+        margin-left: 90px;
+    }
+    .hero .container .left .bottomleft {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        flex-direction: column;
+    }
+    .two .containertwo .righttwo p{
+        margin-left: 110px;
+    }
+    .three .containerthree .leftthree .button{
+        margin-top: 70px;
+        margin-left: 110px;
+    }
+    
+
+ }
+
+
+ @media screen and (min-width:426px) and (max-width:800px) {
+
+    
+    
+    header, header nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+    }
+    .hero, .one, .two, .three, .four, .five{
+        width: 90vw;
+        height: 150vh;
+        margin: auto;
+        
+
+    }
+    .container, .containertwo, .containerthree, .containerfour{
+        width: 100%;
+        height:100% ;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .left, .right, .lefttwo, .righttwo, .leftthree, .rightthree{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+    .hero .container .left h1 {
+        width: 100%;
+        font-size: 50px;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .hero .container .left {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    form{
+        margin-bottom: 30px;
+    }
+    .two .containertwo .righttwo p {
+        margin: auto;
+    }
+    .lefttwo {
+        
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .two .containertwo .righttwo h2, .two .containertwo .lefttwo h1{
+        width: 100%;
+        text-align: center;
+    }
+    .three .containerthree .leftthree {
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .three .containerthree .leftthree h1 {
+        font-size: 50px;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .hero .container .right{
+        width: 100%;
+    }
+    .four .containerfour .top{
+        
+        width: 100%;
+    }
+    .four .containerfour .middle, .four .containerfour .bottom{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        
+        
+    }
+    .four{
+        height: 250vh;
+    }
+    .bottomlearn{
+        justify-content: center;
+    }
+    .five .topmost{
+        flex-direction: column;
+    }
+    .five .topmost .topguy{
+        width: 100%;
+        height: 80%;
+    }
+    .five .down{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .five .downone, .five .downtwo{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .five .button{
+        margin-left: 120px;
+    }
+    .hero .container .left .button{
+        margin-left: 90px;
+    }
+    .hero .container .left .bottomleft {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        flex-direction: column;
+    }
+    
+    .three .containerthree .leftthree .button{
+        margin-top: 70px;
+        margin-left: 0px;
+    }
+    
+    
+
+ }
